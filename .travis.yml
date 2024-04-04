@@ -6,4 +6,4 @@ before_install:
   - docker build -t brianc/docker-react -f Dockerfile.dev .
 
 script:
- - docker run -e CI=true brianc/docker-react nmp run test -- --coverage
+ - docker run -e CI=true brianc/docker-react npm run test -- --coverage
